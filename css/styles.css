@@ -29,7 +29,7 @@
 
 :root {
     font-size: 18px;
-    --gray30: #212121;
+    --gray30: #424242;
     --gray20: #212429;
     --gray10: #616161;
 }
@@ -71,3 +71,38 @@ h2 {
 h3 {
     font-size: 1.5em;
 }
+
+pre {
+    background: #FEC62E;
+}
+
+.hero {
+    height: 350px;
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../images/pattern.png');
+    /* background: url('../images/pattern.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: left 20px bottom -20px; */
+    /* background-size: cover; */
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+.section-content h3 {
+    counter-increment: titleList;
+}
+.section-content h3::before {
+    content: counter(titleList, decimal)". ";
+}
+
+.section-content h3::after {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+}
+
+/* ::selection { */
+/*     background: red; */
+/* } */
