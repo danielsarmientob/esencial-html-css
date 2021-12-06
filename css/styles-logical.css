@@ -1,0 +1,108 @@
+@font-face {
+    font-family: charterRegular;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: charterBold;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: charterItalic;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: charterBoldItalic;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    font-size: 18px;
+    --gray30: #424242;
+    --gray20: #212429;
+    --gray10: #616161;
+}
+body {
+    color: var(--gray30);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: var(--gray30);
+}
+
+header {
+    font-size: 14px;
+    color: var(--gray10);
+}
+
+header a {
+    /* --gray10: red; */
+    color: var(--gray10);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--gray30);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+pre {
+    background: #FEC62E;
+}
+
+.hero {
+    height: 350px;
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../images/pattern.png');
+    /* background: url('../images/pattern.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: left 20px bottom -20px; */
+    /* background-size: cover; */
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+.section-content h3 {
+    counter-increment: titleList;
+}
+.section-content h3::before {
+    content: counter(titleList, decimal)". ";
+}
+
+.section-content h3::after {
+    display: block;
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+}
+
+/* ::selection { */
+/*     background: red; */
+/* } */

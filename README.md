@@ -66,3 +66,20 @@
 
     ```
   - listas personalizadas: [https://www.w3.org/TR/CSS2/generate.html#counter-styles](https://www.w3.org/TR/CSS2/generate.html#counter-styles "www.w3.org")
+
+### Wrapper
+  - ```
+    /* Componente main, pintar fondo */
+    main {
+    border: 1px solid blue;
+    }
+    /* Centra el contenido, colocar ancho, dilimitar fronteras */
+    .wrapper {
+        width: 902px;
+        margin: auto;
+    }
+    /* Contenido del componente main */
+    .main-content {
+        background: white;
+    }
+    ```
