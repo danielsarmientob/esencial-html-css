@@ -83,3 +83,23 @@
         background: white;
     }
     ```
+## Maquetación con propiedades y valores lógicos
+### Márgenes
+  - ```
+    margin-inline: 100px; 
+    margin-block: 100px; 
+    margin-block-start: 50px;
+    margin-block-end: 50px; 
+    inline-size: 902px; /* ancho */
+    ```
+  - Hacer un Scroller
+    - ```
+      .wrapper {
+          border: 1px solid yellow;
+          inline-size: 902px; /* ancho */
+          block-size: 100px;  /* damos un tamaño pequeño */
+          overflow: auto;     /* hacemos que aparezca el scrollo */
+          margin: auto;
+      }
+
+      ```
