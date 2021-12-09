@@ -72,9 +72,7 @@ header li {
 nav details summary {
     font-weight: bold;
 }
-h1, h2, h3 {
-    /* font-weight: normal; */
-}
+
 h1 {
     font-size: 60px;
     margin-block-start: 64px;

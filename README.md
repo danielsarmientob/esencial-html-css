@@ -92,7 +92,7 @@
     margin-block-end: 50px; 
     inline-size: 902px; /* ancho */
     ```
-  - Hacer un Scroller
+  - Tamaños / wrapper -> Hacer un Scroller
     - ```
       .wrapper {
           border: 1px solid yellow;
