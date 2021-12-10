@@ -103,3 +103,49 @@
       }
 
       ```
+### Bordes
+  - Página para ver que tecnología esta soportada en los navegadores: [https://caniuse.com/](https://caniuse.com/ "caniuse.com")
+  - bordes
+    - ```
+      pre {
+          /* border-left: 5px solid red; */
+          border-inline-start: 5px solid white;
+          border-inline-end: 5px solid white;
+          border-block-start: 10px solid pink;
+          border-block-end: 10px solid pink;
+          border-block-start-color: 1px solid #5551FF; 
+          margin-block-end: 30px;
+          /* border-start-start-radius: 60px; */
+      }
+      ```
+  - Sombra 
+    - ```
+      .sombra {
+        /* Sombra: 
+            -10px para el eje x
+            10px para el eje y 
+            0 difuminado
+            0 de exprep o cuanto se expande
+            #ABBAF6 color 
+        */
+        box-shadow: -10px 10px 0 0 #ABBAF6;
+      }
+      ```
+  - Modal
+    - ```
+      .Modal {
+          background: red;
+          position: fixed;
+          inset:0;
+          margin-inline: 50px;
+      }
+      ```
+ - Posiciones
+    - ```
+      header {
+          position:absolute;
+          /* top */
+          inset-inline-start: -188px;
+          inline-size: 188px;
+      }      
+      ```

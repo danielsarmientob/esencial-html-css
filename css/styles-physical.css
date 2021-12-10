@@ -33,6 +33,11 @@
     --gray20: #212429;
     --gray10: #616161;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--gray30);
     font-family: 'Roboto', sans-serif;
