@@ -149,3 +149,51 @@
           inline-size: 188px;
       }      
       ```
+ 
+## Extras
+- Slider con solo css
+ - Html
+   - ```
+      <div class="slider">
+        <scroll-container class="slider-container">
+          <scroll-page class="slider-slide" id="video-1">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UhzlM28dHiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </scroll-page>
+        </scroll-container>
+      </div>
+      <div class="slider-bullet-list">
+        <a href="#video-1" class="slider-bullet"></a>
+      </div>                            
+    ```
+  - Css
+    - ```
+      .slider-container {
+          /* block-size: 100px; */
+          display: block;
+          overflow: auto;
+          scroll-behavior: smooth;
+          overflow-x: hidden; /* Para borrar la barra de scrool horizontal*/
+          white-space: nowrap;  /* Para que no salten a la siguiente linea*/
+          font-size: 0;
+      }
+
+      .video {
+          margin: 0;
+          display: inline-block;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 16/9;
+      }
+
+      .slider-bullet-list {
+          text-align: center;
+          margin-block-start: 10px;
+      }
+      .slider-bullet {
+          display: inline-block;
+          inline-size: 15px;
+          block-size: 15px;
+          background: white;
+          border-radius: 50%;
+      }
+      ```    
