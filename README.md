@@ -222,3 +222,6 @@
           content="Todo los que necesitas saber si te dedicar al Frontend" 
       />
       ```
+### Favicon
+  - Crear un icono para nuestras páginas.
+  - Website: [https://www.favicon-generator.org/](https://www.favicon-generator.org/ "favicon-generator.org")
