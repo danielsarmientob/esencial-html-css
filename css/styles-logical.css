@@ -38,45 +38,26 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /* writing-mode: vertical-lr; */
     color: var(--white30);
     font-family: 'Nunito', sans-serif;
     background: var(--black10);
     margin: 0;
-    /* margin-inline: 100px; */
-    /* margin-block: 100px; */
-    /* margin-block-start: 50px; */
-    /* margin-block-end: 50px; */
 }
 
 a {
     color: var(--white30);
 }
 
-.header {
-    position: sticky;
-    inset-block-start: -44px;
-
-    /* background: red;
-    position: fixed;
-    inset:0;
-    margin-inline: 50px; */
-}
 .header-content {
-    position: relative;
-    inset-block-start: 64px;
+    padding-inline: 20px;
 }
 header {
     font-size: 14px;
     color: var(--white);
-    position:absolute;
-    /* top */
-    inset-inline-start: -188px;
-    inline-size: 188px;
+    margin-block-start: 20px;
 }
 
 header a {
-    /* --white10: red; */
     color: var(--white20);
     text-decoration: none;
 }
@@ -95,8 +76,8 @@ nav details summary {
 }
 
 h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
@@ -122,22 +103,14 @@ pre {
     padding: 40px;
     overflow: auto;
     border-radius: 8px;
-    /* border-left: 5px solid red; */
     border-inline-start: 5px solid white;
     border-inline-end: 5px solid white;
     border-block-start: 10px solid pink;
     border-block-end: 10px solid pink;
     border-block-start-color: 1px solid #5551FF;
-    /* Sombra: 
-        -10px para el eje x
-        10px para el eje y 
-        0 difuminado
-        0 de exprep o cuanto se expande
-        #ABBAF6 color 
-    */
+    
     box-shadow: -10px 10px 0 0 #ABBAF6; 
     margin-block-end: 30px;
-    /* border-start-start-radius: 60px; */
 }
 
 p {
@@ -145,13 +118,8 @@ p {
 }
 
 .hero {
-    height: 350px;
+    height: 50px;
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    /* background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../images/pattern.png'); */
-    /* background: url('../images/pattern.png'); */
-    /* background-repeat: no-repeat; */
-    /* background-position: left 20px bottom -20px; */
-    /* background-size: cover; */
 }
 
 .section-content img {
@@ -169,20 +137,16 @@ p {
     content: counter(titleList, decimal)". ";
 }
 
-/* .section-content h3::after {
-    display: block;
-    content: '';
-    width: 32px;
-    height: 4px;
-    background: var(--white30);
-} */
+.section-content h4 {
+    font-weight: 400;
+    font-size: 24px;
+}
 
 blockquote {
     margin-block-start: 80px;
     margin-block-end: 63px;
     background-color: var(--white10);
     border-radius: 8px;
-    /* padding: 24px; */
     line-height: 32px;
     font-size: 24px;
     padding-inline-end: 24px;
@@ -198,25 +162,17 @@ blockquote p {
 .main hr {
     display: none;
 }
-.main {
 
-}
 .wrapper {
     max-inline-size: 902px; /* ancho */
-    /* block-size: 100px; */
-    /* overflow: auto; */
-    margin: auto 116px auto auto;
+    margin: auto;
 }
 
 .main-content {
     padding-inline: 16px;
 }
-/* ::selection { */
-/*     background: red; */
-/* } */
 
 .slider-container {
-    /* block-size: 100px; */
     display: block;
     overflow: auto;
     scroll-behavior: smooth;
@@ -266,4 +222,33 @@ blockquote p {
 
 .form input::-webkit-input-placeholder {
     color: var(--white20);
+}
+
+@media screen and (min-width: 1366px) {
+    .header {
+        position: sticky;
+        inset-block-start: -44px;
+    }
+    .header-content {
+        position: relative;
+        inset-block-start: 64px;
+        padding-inline: 0;
+    }
+    header {
+        font-size: 14px;
+        color: var(--white);
+        position:absolute;
+        inset-inline-start: -188px;
+        inline-size: 188px;
+    }
+
+    .hero {
+        block-size: 350px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        margin-block-start: 64px;
+        margin-block-end: 16px;
+    }
 }
