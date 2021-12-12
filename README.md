@@ -151,7 +151,7 @@
       ```
  
 ## Extras
-- Slider con solo css
+### Slider con solo css
  - Html
    - ```
       <div class="slider">
@@ -196,4 +196,29 @@
           background: white;
           border-radius: 50%;
       }
-      ```    
+      ```   
+### Media Queries y Responsive
+  - Se puede agregar condiciones en las cuales quiero estar ocupando las medias Queries
+  - Medias types: Le decimos a quien va afectar este media Querie
+    - print: Afecta impresión.
+    - all: Afecta a todos los dispositivos.
+    - screen: Afecta solo a la pantalla.
+  - Colocar condiciones que estamos en pantalla vertical, horizontal o darkMode.
+  - `` @media screen and (min-width: 1366px) ``
+    - screen: Primera condición, afecta solo a pantalla.
+    - min-width: 1366px: Segunda condición, afecta solo a un ancho de pantalla mayor a 1366px.   
+   
+### Open Graph   
+  - Open Graph: [https://ogp.me/](https://ogp.me/ "ogp.me") 
+  - Facebook developers: [https://developers.facebook.com/tools/debug/](https://developers.facebook.com/tools/debug/ "developers.facebook.com")
+  - Agregar metas:
+    - ```
+      <meta property="og:title" content="Proyecto del curso esencial html y css" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://danielsarmientob.github.io/esencial-html-css/" />
+      <meta property="og:image" content="https://danielsarmientob.github.io/esencial-html-css/images/dom.png" />
+
+      <meta property="og:description" 
+          content="Todo los que necesitas saber si te dedicar al Frontend" 
+      />
+      ```
